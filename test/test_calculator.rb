@@ -13,4 +13,10 @@ class CalculatorTest < Test::Unit::TestCase
     actual = calculator.subtract(2,2)
     assert_equal(0, actual)
   end
+
+  def test_can_multiply
+    calculator = Calculator.new
+    actual = calculator.multiply(3,2)
+    assert_equal(6, actual)
+  end
 end
